@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * infinite_add - add 2 integers.
@@ -10,7 +9,6 @@
  * Return: poiters to the result.
  * Returns: zero if the result can't be stored in a.
  */
-
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int a_len = 0, b_len = 0, carry = 0, a, b, sum, biggest;
