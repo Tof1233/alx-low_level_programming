@@ -1,4 +1,23 @@
 #!/bin/bash
-gcc -c main.h 0-isupper.o 0-memset.o 0-strcat.o 1-isdigit.o 1-memcpy.o 1-strncat.o 100-atoi.o 2-strchr.o 2-strlen.o 2-strncpy.o 3-islower.o 3-puts.o 3-strcmp.o 3-strspn.o 4-isalpha.o 4-strpbrk.o 5-strstr.o 6-abs.o 9-strcpy.o _putchar.o
+gcc -c main.h 0-isupper.o \n
+0-memset.o \n 
+0-strcat.o \n
+1-isdigit.o \n
+1-memcpy.o \n
+1-strncat.o \n
+100-atoi.o \n
+2-strchr.o \n
+2-strlen.o \n
+2-strncpy.o \n
+3-islower.o \n
+3-puts.o \n
+3-strcmp.o \n
+3-strspn.o \n
+4-isalpha.o \n
+4-strpbrk.o \n
+5-strstr.o \n
+6-abs.o \n
+9-strcpy.o \n
+_putchar.o \n
 ar rc libmy.a *.o
 ranlibmy.a
