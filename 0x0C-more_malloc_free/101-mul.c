@@ -6,7 +6,6 @@
  * @x: character to convert.
  * Return: integer.
  **/
-
 int _atoi_digit(char x)
 {
 	unsigned int res;
@@ -15,7 +14,6 @@ int _atoi_digit(char x)
 		res = x - '0';
 	return (res);
 }
-
 /**
  * _isNumber - Define if a string is a number.
  * @argv: Pointer to string.
@@ -30,14 +28,12 @@ int _isNumber(char *argv)
 			return (1);
 	return (0);
 }
-
 /**
  *_calloc - allocate array of size * nmemb.
  * @nmemb: number of elements.
  * @size: size of element.
  * Return: pointer to array.
  **/
-
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *tab;
@@ -53,7 +49,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	return (tab);
 }
-
 /**
  * mul_array - multiply two arrays.
  * @a1: first array.
@@ -63,7 +58,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
  * @lena: length of array a3.
  * Return: pointer to array.
  **/
-
 void *mul_array(char *a1, int len1, char a2, char *a3, int lena)
 {
 	int mul = 0, i, k;
@@ -106,14 +100,12 @@ void print_array(char *a, int nb)
 	}
 	_putchar('\n');
 }
-
 /**
  *main - print the multiplication of 2 numbers.
  *@argc: array length.
  *@argv: array.
  *Return: 0.
  */
-
 int main(int argc, char *argv[])
 {
 	int i, c, len1, len2, lenres;
