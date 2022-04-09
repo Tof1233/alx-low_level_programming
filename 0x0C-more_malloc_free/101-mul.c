@@ -29,14 +29,33 @@ int is_digit(char *s)
  *
  * Return: pointer of a char array.
  */
-/**
- * errors - handles errors for main
- */
-void errors(void)
+
+void _is_zero(char *argv[])
 {
-	printf("Error\n");
-	exit(98);
+	int i, isn1 = 1, isn2 = 1;
+
+	for (i = 0; argv[1][i]; i++)
+		if (argv[1][i] != '0')
+		{
+			isn1 = 0;
+			break;
+		}
+
+	for (i = 0; argv[2][i]; i++)
+		if (argv[2][i] != '0')
+		{
+			isn2 = 0;
+			break;
+		}
+
+	if (isn1 == 1 || isn2 == 1)
+	{
+		printf("0\n");
+		exit(0);
+	}
 }
+
+
 char *_initialize_array(char *ar, int lar)
 {
 	int i = 0;
@@ -47,6 +66,14 @@ char *_initialize_array(char *ar, int lar)
 	return (ar);
 }
 
+/**
+ * errors - handles errors for main
+ */
+void errors(void)
+{
+	printf("Error\n");
+	exit(98);
+}
 /**
  * _checknum - determines length of the number
  * and checks if number is in base 10.
