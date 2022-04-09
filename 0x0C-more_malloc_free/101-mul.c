@@ -1,4 +1,6 @@
 #include "main.h"
+int is_digit(char c)
+int *multiply(char *num1, char *num2)
 
 /**
  * is_digit - checks for digits
