@@ -9,8 +9,8 @@ int is_digit(char c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);
-	printf("Error\n");
-	return (98);
+	//printf("Error\n");
+	return (0);
 }
 /**
  * multiply - multiplies 2 #'s, prints result, must be 2 #'s
@@ -18,7 +18,7 @@ int is_digit(char c)
  * @num2: factor # 2 (2nd number)
  * Return: 0 fail, 1 success
  */
-int *multiply(char *num1, char *num2)
+//int *multiply(char *num1, char *num2)
 /**
  * main - multiply 2 input #'s and print result or print Error
  * @argc: input count of args
