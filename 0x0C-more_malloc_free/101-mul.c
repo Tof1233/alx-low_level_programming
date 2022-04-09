@@ -4,34 +4,22 @@
 #include <ctype.h>
 
 /**
- * _is_zero - determines if any number is zero
- * @argv: argument vector.
+ * is_digit - checks if a string contains a non-digit char
+ * @s: string to be evaluated
  *
- * Return: no return.
+ * Return: 0 if a non-digit is found, 1 otherwise
  */
-void _is_zero(char *argv[])
+int is_digit(char *s)
 {
-	int i, isn1 = 1, isn2 = 1;
+	int i = 0;
 
-	for (i = 0; argv[1][i]; i++)
-		if (argv[1][i] != '0')
-		{
-			isn1 = 0;
-			break;
-		}
-
-	for (i = 0; argv[2][i]; i++)
-		if (argv[2][i] != '0')
-		{
-			isn2 = 0;
-			break;
-		}
-
-	if (isn1 == 1 || isn2 == 1)
+	while (s[i])
 	{
-		printf("0\n");
-		exit(0);
+		if (s[i] < '0' || s[i] > '9')
+			return (0);
+		i++;
 	}
+	return (1);
 }
 
 /**
