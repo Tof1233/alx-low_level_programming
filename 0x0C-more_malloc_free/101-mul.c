@@ -29,6 +29,14 @@ int is_digit(char *s)
  *
  * Return: pointer of a char array.
  */
+/**
+ * errors - handles errors for main
+ */
+void errors(void)
+{
+	printf("Error\n");
+	exit(98);
+}
 char *_initialize_array(char *ar, int lar)
 {
 	int i = 0;
