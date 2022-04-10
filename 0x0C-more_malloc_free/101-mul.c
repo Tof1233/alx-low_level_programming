@@ -23,13 +23,11 @@ int is_digit(char *s)
 }
 
 /**
- * _initialize_array - set memery to zero in a new array
- * @ar: char array.
- * @lar: length of the char array.
+ * _is_zero - determines if any number is zero
+ * @argv: argument vector.
  *
- * Return: pointer of a char array.
+ * Return: no return.
  */
-
 void _is_zero(char *argv[])
 {
 	int i, isn1 = 1, isn2 = 1;
@@ -55,7 +53,13 @@ void _is_zero(char *argv[])
 	}
 }
 
-
+/**
+ * _initialize_array - set memery to zero in a new array
+ * @ar: char array.
+ * @lar: length of the char array.
+ *
+ * Return: pointer of a char array.
+ */
 char *_initialize_array(char *ar, int lar)
 {
 	int i = 0;
@@ -74,6 +78,7 @@ void errors(void)
 	printf("Error\n");
 	exit(98);
 }
+
 /**
  * _checknum - determines length of the number
  * and checks if number is in base 10.
